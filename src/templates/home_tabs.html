@@ -1,0 +1,6 @@
+<div data-bb-type="action-bar" id="actionbar">
+  <div data-bb-type="action" data-bb-style="tab" data-bb-img="images/org_icon.png" onclick="window.location='#organizations'" <% if(selected == "organizations"){ %> data-bb-selected="true" <% } %>>Organizations</div>
+  <div data-bb-type="action" data-bb-style="tab" data-bb-img="images/boards_icon.png" onclick="window.location='#boards'" <% if(selected == "boards"){ %> data-bb-selected="true" <% } %>>Boards</div>
+  <div data-bb-type="action" data-bb-style="tab" data-bb-img="images/my_profile_icon.png" onclick="window.location='#member/me'" <% if(selected == "my_account"){ %> data-bb-selected="true" <% } %>>My Account</div>
+  <div data-bb-type="action" data-bb-style="button" data-bb-img="images/notifications.png" onclick="showNotifications()">Notifications</div>
+</div>

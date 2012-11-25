@@ -1,0 +1,33 @@
+<div data-bb-type="title" data-bb-caption="<%= name %>" data-bb-action-caption="Edit" id="title"></div>
+<div class="below_title">
+  <div data-bb-type="round-panel"> 
+      <div data-bb-type="panel-header"><%= name %></div>
+      <a id="edit">Edit</a>
+      <p>
+      <%= desc %>
+      </p>
+      <p>
+        Labels:
+      </p>
+      <ul>
+        <% for(i in labels){ %>
+          <li class="labels" style="background: <%= labels[i].color %>;"> <%= labels[i].name %></li>
+        <% } %>
+      </ul>
+  </div>
+</div>
+<div data-bb-type="scroll-panel" id="scrollPanel">
+  <div data-bb-type="round-panel"> 
+      <div data-bb-type="panel-header">Add coment</div>
+      <div data-bb-type="label-control-container">
+        <div data-bb-type="row">
+            <div data-bb-type="label">Your comment:</div>
+            <input id="commentText" type="text" placeholder="Write here" id="cardDescription"/>
+        </div>
+    <div data-bb-type="button" id="add_comment">Add</div>
+    </div>    
+  </div>
+
+  <div id="comments">
+  </div>
+</div>
